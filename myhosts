@@ -1,10 +1,10 @@
-mywebserves
-[172.31.16.189]
+[mywebserves]
+172.31.16.189
 
-myappservers
-[172.31.16.190]
+[myappservers]
+172.31.16.190
 
-mydbservers
-[172.31.16.191]
+[mydbservers]
+172.31.16.191
 
 
