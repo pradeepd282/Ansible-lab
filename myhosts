@@ -7,4 +7,8 @@
 [mydbservers]
 172.31.16.191
 
+[mywebservers:vars]
+key=value
+mywebserverpack= apache222222
+
 
