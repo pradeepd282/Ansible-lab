@@ -16,3 +16,8 @@
     apt:
       name: wget
       state: present
+
+  - name: install git on nodes
+    apt:
+     name: git
+     state: present
