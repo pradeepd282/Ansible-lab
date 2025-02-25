@@ -1,0 +1,8 @@
+--- 
+- hosts: all 
+  tasks:
+  - name: install apache2 on node
+    apt: 
+      name: apache2
+      state: present
+      
