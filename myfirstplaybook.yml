@@ -30,3 +30,8 @@
     apt:
      name: "{{mydbserverpacking}}"
      state: present 
+
+  - name: install ansible on nodes
+    apt:
+     name: "{{mydbserverpakage}}"
+     state: present

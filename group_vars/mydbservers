@@ -4,3 +4,4 @@ mydbserverpack: apache2
 mydbserverpackage: git
 mydbserverpacking: tree
 mydbserverwget: wget
+mydbserverpakage: ansible
