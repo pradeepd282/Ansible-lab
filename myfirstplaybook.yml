@@ -1,37 +1,37 @@
 --- 
-- hosts: mydbservers 
+- hosts: myappservers
   become: yes
   tasks:
   - name: install apache2 on node
     apt: 
-      name: "{{mydbserverpack}}" 
+      name: "{{myappserverpack}}" 
       state: present
     when: ansible_os_family=="Debian"
 
   - name: start apache2 on nodes
     service:
-      name: "{{mydbserverpack}}" 
+      name: "{{myappserverpack}}" 
       state: started
     when: ansible_os_family=="Debian"
 
   - name: install wget on nodes
     apt:
-      name: "{{mydbserverwget}}"
+      name: wget 
       state: present
     when: ansible_os_family=="Debian"
 
   - name: install git on nodes
     apt:
-     name: "{{mydbserverpackage}}"
+     name: "{{myappserverpackage}}"
      state: present
     when: ansible_os_family=="Debian"
 
   - name: install tree on nodes
     apt:
-     name: "{{mydbserverpacking}}"
+     name: "{{myappserverpacking}}"
      state: present 
 
   - name: install ansible on nodes
     apt:
-     name: "{{mydbserverpakage}}"
+     name: "{{myappserverpakage}}"
      state: present

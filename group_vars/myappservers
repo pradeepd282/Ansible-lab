@@ -3,4 +3,4 @@ key: value
 myappserverpack: apache2
 myappserverpackage: git
 myappserverpacking: tree
-mydbserverpakage: ansible
+myappserverpakage: ansible
