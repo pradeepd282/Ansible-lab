@@ -28,5 +28,5 @@
 
   - name: install tree on nodes
     apt:
-     name: tree 
+     name: "{{myappserverpacking}}"
      state: present 
