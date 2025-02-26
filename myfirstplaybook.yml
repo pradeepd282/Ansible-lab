@@ -10,7 +10,7 @@
 
   - name: start apache2 on nodes
     service:
-      name: "{myappserverpack}}" 
+      name: "{{myappserverpack}}" 
       state: started
     when: ansible_os_family=="Debian"
 
