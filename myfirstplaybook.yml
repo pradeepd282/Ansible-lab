@@ -1,5 +1,5 @@
 --- 
-- hosts: mywebservers 
+- hosts: myappservers 
   become: yes
   tasks:
   - name: install apache2 on node
