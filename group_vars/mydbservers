@@ -1,3 +1,6 @@
 ---
 key: value
-webserverpack: apache2
+dbserverpack: apache2
+dbserverpackage: git
+dbserverpacking: tree
+dbserverwget: wget
