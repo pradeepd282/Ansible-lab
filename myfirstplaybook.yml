@@ -1,5 +1,5 @@
 --- 
-- hosts: mywebservers 
+- hosts: all  
   become: yes
   tasks:
   - name: install apache2 on node
@@ -25,3 +25,8 @@
      name: git
      state: present
     when: ansible_os_family=="Debian"
+
+  - name: install tree on nodes
+    apt:
+     name: tree 
+     state: present 
