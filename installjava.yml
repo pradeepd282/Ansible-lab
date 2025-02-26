@@ -1,0 +1,8 @@
+--- 
+- hosts: mywebservers
+  become: yes
+  tasks:
+  - name: install java on nodes
+    apt:
+     name: "{{myjavapack}}"
+     state: present 
