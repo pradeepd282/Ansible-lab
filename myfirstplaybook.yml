@@ -22,7 +22,7 @@
 
   - name: install git on nodes
     apt:
-     name: git
+     name: "{{myappserverpackage}}"
      state: present
     when: ansible_os_family=="Debian"
 
