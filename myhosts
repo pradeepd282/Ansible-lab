@@ -7,6 +7,10 @@
 [mydbservers]
 172.31.16.191
 
+[myappservers:vars]
+key: value
+myappserverpack: apache2
+
 
 
 

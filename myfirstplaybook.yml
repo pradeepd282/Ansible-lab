@@ -4,13 +4,13 @@
   tasks:
   - name: install apache2 on node
     apt: 
-      name: apache2 
+      name: "{{myappserverpack}}" 
       state: present
     when: ansible_os_family=="Debian"
 
   - name: start apache2 on nodes
     service:
-      name: apache2  
+      name: "{myappserverpack}}" 
       state: started
     when: ansible_os_family=="Debian"
 
