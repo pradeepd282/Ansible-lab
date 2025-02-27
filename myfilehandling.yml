@@ -33,7 +33,7 @@
 
   - name: create folder
     file:
-     name: myfolder1
+     path: /home/admin/myfolder1
      state: directory 
 
   - name: copy file on myfolder1
