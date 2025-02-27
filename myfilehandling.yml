@@ -1,0 +1,21 @@
+--- 
+- hosts: mywebservers 
+  tasks: 
+  - include_tasks: myfile.yml
+
+  - name: create folder
+    file:
+      path: /home/admin/myfolder
+      state: directory
+
+  - name: copy a file into my directory
+    copy:
+      src: staticfile
+      dest: /home/admin/myfolder/staticfile 
+
+  - name: we need of to download files from internet 
+    get_url:
+      url: https://github.com/pradeepd282/Ansible-lab/blob/main/myfirstplaybook.yml
+      dest: /home/admin/myfolder/myfirstplaybook.yml
+      force_basic_auth: yes
+
