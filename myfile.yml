@@ -6,5 +6,5 @@
 
 - name: create a file
   file:
-   path: /d/ansible/myfirstfilefile
+   path: /home/admin/mysecondfile
    state: touch
