@@ -32,7 +32,7 @@
     notify: restart webserver 
 
   handlers:
-    - name: restart webserver
-      service:
-       name: apache2 
-       state: restarted
+  - name: restart webserver
+    service:
+     name: apache2 
+     state: restarted
