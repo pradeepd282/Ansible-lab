@@ -3,3 +3,8 @@
   file:
    path: /home/admin/myfirstfile
    state: touch
+
+- name: create a file
+  file:
+   path: D:\ansible
+   state: touch
