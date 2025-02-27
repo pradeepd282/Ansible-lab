@@ -31,12 +31,6 @@
      dest: /var/www/html/index.html
     notify: restart webserver 
 
-  handlers:
-  - name: restart webserver
-    service:
-     name: apache2 
-     state: restarted
-
   - name: create folder
     file:
      name: myfolder1
@@ -46,3 +40,11 @@
     copy:
      src: staticfiles
      dest: /home/admin/myfolder1/staticfiles
+
+  handlers:
+  - name: restart webserver
+    service:
+     name: apache2 
+     state: restarted
+
+  
