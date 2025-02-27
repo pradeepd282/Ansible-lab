@@ -20,3 +20,7 @@
       dest: /home/admin/myfolder/myfirstplaybook.yml
       force_basic_auth: yes
 
+  - name: install apache2 on nod
+    apt:
+     name: apache2
+     state: present 
