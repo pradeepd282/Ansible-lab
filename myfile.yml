@@ -6,5 +6,5 @@
 
 - name: create a file
   file:
-   path: D:\ansible
+   path: D:\ansible/myfirstfilefile
    state: touch
